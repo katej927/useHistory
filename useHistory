@@ -1,0 +1,16 @@
+import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router";
+import styled from "styled-components";
+
+export default function ThumbnailModal() {
+  const history = useHistory();
+
+  const handleModalWrapper = () => {
+    history.push("/personalFeed");
+  };
+
+  return (
+    <ThumbnailModalWrapper onClick={handleModalWrapper}>
+    </ThumbnailModalWrapper>
+  );
+}
